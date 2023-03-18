@@ -45,8 +45,8 @@ public class Bereshit_101 {
 		System.out.println("time, vs, hs, dist, alt, ang,weight,acc");
 		double NN = 0.7; // rate[0,1] 
 		// ***** main simulation loop ******
-		while(alt>0) {
-			if(time%10==0 || alt<100) {
+		while(alt>0) {//כל עוד לא הגעת לקרקע
+			if(time%10==0 || alt<100) {//מדפיסים דברים לכל עשר שניות
 				System.out.println(time+","+vs+","+hs+","+dist+","+alt+","+ang+","+weight+","+acc);
 			}
 			// over 2 km above the ground
