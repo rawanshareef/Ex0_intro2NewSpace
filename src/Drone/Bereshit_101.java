@@ -42,12 +42,12 @@ public class Bereshit_101 {
 		double acc=0; // Acceleration rate (m/s^2)
 		double fuel = 121; // 
 		double weight = WEIGHT_EMP + fuel;
-		System.out.println("time, vs, hs, dist, alt, ang,weight,acc");
+		System.out.println("time, vs, hs, dist, alt, ang,weight,acc,fuel");
 		double NN = 0.7; // rate[0,1] 
 		// ***** main simulation loop ******
 		while(alt>0) {//כל עוד לא הגעת לקרקע
 			if(time%10==0 || alt<100) {//מדפיסים דברים לכל עשר שניות
-				System.out.println(time+","+vs+","+hs+","+dist+","+alt+","+ang+","+weight+","+acc);
+				System.out.println(time+","+vs+","+hs+","+dist+","+alt+","+ang+","+weight+","+acc+"," +fuel);
 			}
 			// over 2 km above the ground
 			if(alt>2000) {	// maintain a vertical speed of [20-25] m/s
@@ -82,7 +82,7 @@ public class Bereshit_101 {
 			}
 			else { // ran out of fuel
 				acc=0;
-			}
+			}		
 		
 			v_acc -= vacc; 
 			if(hs>0) {hs -= h_acc*dt;}
