@@ -11,10 +11,24 @@ public class PID {
         this.Integral = 0;
         this.max_i=0;
     }
-   /* public double update(double error, double dt){
-        //double control=P*error+D*
+    public double constrain(double value, double min, double max){
+        if(value < min){
+            return min ;
+        }
+        else if(value > max ){
+            return max;
+        }
+        return value;
+    }
+    public double update(double error, double dt){
+        Integral+=I*error*dt;
+        double diff=(error-last_error)/dt;
+        double const_integral=constrain(Integral, max_i,-max_i);
+        double control=P*error+D*diff+const_integral;
+        last_error=error;
         return control;
-    }*/
+
+    }
 
 
 
