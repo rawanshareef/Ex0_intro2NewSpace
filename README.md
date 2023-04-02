@@ -48,10 +48,10 @@ This meant that the main engine did not work to brake the spaceship (the other s
 
  ![](https://images1.calcalist.co.il/PicServer3/2019/04/11/898977/3LM.jpg)
 
-
-                                                                                                          יורי גריגוריאן
-                                                                                                           דניאל עוקבי
-                                                                                                            רואן שריף 
+     יורי גריגוריאן
+      דניאל עוקבי
+       רואן שריף
+                                                                                                       
                                                                                                           
 
 
